@@ -500,7 +500,7 @@ button:focus {
 }
 
 .banner_area .bg-parallax {
-  background: url("image/otimizadas/melhores-filmes-bghomet.jpg") no-repeat scroll center 0/cover;
+  background: url("../image/melhores-filmes-bghomet.jpg") no-repeat scroll center 0/cover;
   opacity: 0.50;
 }
 
