@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-    <!-- Meta tags necessárias -->
+    <!-- Meta tags obrigatórios -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="image/favicon.png" type="image/png">
-    <title>Hotel Royal</title>
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="image/optimizedimages/logo.png" type="image/png">
+    <title>CineReview - Séries</title>
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="vendors/linericon/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,47 +16,421 @@
     <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <style>
+        .single_review_item {
+            display: flex;
+            flex-direction: column;
+            height: 100%; 
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .img-fluid {
+            height: 400px; 
+            object-fit: cover; 
+        }
+
+        .review_content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review_content h4 {
+            margin-top: 0;
+        }
+
+        .review_content p {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+
+        .review_content img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px;
+        }
+
+        .btn.theme_btn.button_hover {
+            align-self: center; 
+            margin-top: auto; 
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .latest_reviews_area .single_review_item .review_content img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px;
+        }
+
+        .cine {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 28px; 
+            font-weight: bold; 
+            color: #333; 
+            letter-spacing: 1.5px; 
+            text-transform: uppercase; 
+            margin-left: 10px; 
+            display: inline-block; 
+            vertical-align: middle; 
+        }
+
+        .logocine {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .breadcrumb_are {
+            background-image: url('./image/optimizedimages/streaming.webp');
+            height: 800px;
+         
+       
+        }
+    </style>
 </head>
 <body>
-    <!--================Header Area =================-->
+    <!--================Área de Cabeçalho =================-->
     <header class="header_area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <!-- Brand e botão de toggle para melhor visualização mobile -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo.png" alt=""></a>
+                <div class="logocine">
+                    <img src="./image/optimizedimages/logo.png" class="logo">
+                    <p class="cine">CineReview</p>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Itens de navegação -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                        <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="series.html">Séries</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="series.html">Séries</a></li>
                         <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
                     </ul>
-                </div> 
+                </div>
             </nav>
         </div>
     </header>
-    <!--================Header Area =================-->
+    <!--================Área de Cabeçalho =================-->
 
-    <!-- Aqui vai o restante do seu conteúdo HTML -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <!--================Área de Breadcrumb =================-->
+    <section class="breadcrumb_are">
+        <div class="container">
+            <div class="page-cover text-center">
+            </div>
+        </div>
+    </section>
+    <!--================Área de Breadcrumb =================-->
+    
+    <!--================Área de Críticas de Séries =================-->
+    <section class="latest_reviews_area section_gap">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_color">Principais Críticas de Séries</h2>
+                <p>Veja nossas críticas sobre as séries mais populares.</p>
+            </div>
+            <div class="row">
+                <!-- Série: Invencível -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/invencivel.jpg" alt="Invencível">
+                            <h4><a href="#">Invencível</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Invencível" acompanha Mark Grayson, um adolescente cujo pai é o super-herói mais poderoso do planeta. Quando Mark desenvolve seus próprios poderes, ele descobre que ser um herói é mais complexo e perigoso do que imaginava.</p>
+                            <a href="./Html/invencivel.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Better Call Saul -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/bettercallsaul.jpg" alt="Better Call Saul">
+                            <h4><a href="#">Better Call Saul</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>"Better Call Saul" segue a transformação de Jimmy McGill, um advogado de baixa reputação, no infame Saul Goodman. A série explora sua jornada pessoal e profissional no submundo do crime antes dos eventos de "Breaking Bad".</p>
+                            <a href="./Html/better-call-saul.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: The Walking Dead -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/thewalkingdead.jpg" alt="The Walking Dead">
+                            <h4><a href="#">The Walking Dead</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>"The Walking Dead" narra a luta pela sobrevivência de um grupo de pessoas após um apocalipse zumbi. A série explora temas de sobrevivência, amizade e a natureza humana em um mundo devastado.</p>
+                            <a href="./Html/the-walking-dead.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: The Last of Us -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/thelastofus.jpg" alt="The Last of Us">
+                            <h4><a href="#">The Last of Us</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>"The Last of Us" é uma adaptação do famoso jogo, centrando-se na jornada de Joel e Ellie através de um mundo pós-apocalíptico. A série é conhecida por sua narrativa emocional e personagens complexos.</p>
+                            <a href="./Html/the-last-of-us.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Peaky Blinders -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/peakyblinders.jpg" alt="Peaky Blinders">
+                            <h4><a href="#">Peaky Blinders</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Peaky Blinders" segue a ascensão da gangue de Birmingham liderada por Tommy Shelby, após a Primeira Guerra Mundial. A série é famosa por seu estilo visual e trilha sonora únicos.</p>
+                            <a href="./Html/peaky-blinders.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: The Office -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/theoffice.jpg" alt="The Office">
+                            <h4><a href="#">The Office</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>"The Office" é uma série de comédia que documenta o cotidiano dos funcionários da Dunder Mifflin, uma empresa de papel. A série é conhecida por seu humor peculiar e personagens memoráveis.</p>
+                            <a href="./Html/the-office.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Black Mirror -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src='./image/optimizedimages/blackmirror.jpg 'alt="Black Mirror">
+                            <h4><a href="#">Black Mirror</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Black Mirror" é uma antologia que explora a relação entre tecnologia e sociedade. Cada episódio apresenta uma narrativa independente, muitas vezes distópica e perturbadora, sobre as consequências do avanço tecnológico.</p>
+                            <a href="./Html/black-mirror.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Supernatural -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/supernatural.jpg" alt="Supernatural">
+                            <h4><a href="#">Supernatural</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>"Supernatural" segue os irmãos Winchester, Sam e Dean, enquanto eles caçam demônios, fantasmas e outras criaturas sobrenaturais. A série é conhecida por suas histórias envolventes e personagens carismáticos.</p>
+                            <a href="./Html/supernatural.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Game of Thrones -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/gameofthrones.jpg" alt="Game of Thrones">
+                            <h4><a href="#">Game of Thrones</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Game of Thrones" é uma série épica baseada nos livros de George R.R. Martin. Ela segue a luta pelo trono de ferro em Westeros, com traições, batalhas e dragões. A série é famosa por suas reviravoltas inesperadas e produção grandiosa.</p>
+                            <a href="./Html/game-of-thrones.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Ruptura -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/ruptura.jpg" alt="Ruptura">
+                            <h4><a href="#">Ruptura</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Ruptura" é um thriller psicológico que explora a vida de indivíduos que experimentam uma desconexão radical entre suas vidas profissionais e pessoais, levando a consequências inesperadas e perturbadoras.</p>
+                            <a href="./Html/ruptura.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Loki -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/loki.jpg" alt="Loki">
+                            <h4><a href="#">Loki</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Loki" segue o Deus da Trapaça após os eventos de "Vingadores: Endgame", explorando suas aventuras em diferentes realidades e linhas do tempo. A série é conhecida por sua narrativa criativa e o carisma de Tom Hiddleston.</p>
+                            <a href="./Html/loki.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Série: Rick and Morty -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/rickandmorty.jpg" alt="Rick and Morty">
+                            <h4><a href="#">Rick and Morty</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+                            <p>"Rick and Morty" é uma série de animação que segue as aventuras de um cientista louco e seu neto através de universos e realidades alternativas. A série é conhecida por seu humor irreverente e criatividade insana.</p>
+                            <a href="./Html/rick-and-morty.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Área de Críticas de Séries =================-->
+    
+    <!--================Rodapé =================-->
+    <footer class="footer-area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Top Produtos</h4>
+                    <ul>
+                        <li><a href="#">Ingressos de Cinema</a></li>
+                        <li><a href="#">DVDs</a></li>
+                        <li><a href="#">Blu-Rays</a></li>
+                        <li><a href="#">Colecionáveis</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 single-footer-widget">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Suporte ao Cliente</a></li>
+                        <li><a href="#">Como Comprar</a></li>
+                        <li><a href="#">Envio e Entrega</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 single-footer-widget">
+                    <h4>Assine Nossa Newsletter</h4>
+                    <p>Receba atualizações e novidades diretamente em sua caixa de entrada.</p>
+                    <div class="form-wrap" id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=92d74cbaf93cd2291e5a414aa&amp;id=715731f6aa" method="get" class="form-inline">
+                            <input class="form-control" name="EMAIL" placeholder="Seu Endereço de Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu Endereço de Email'" required="" type="email">
+                            <button class="click-btn btn btn-default">Inscrever-se</button>
+                            <div style="position: absolute; left: -5000px;">
+                                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                            </div>
+                            <div class="info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom row align-items-center">
+                <p class="footer-text m-0 col-lg-8 col-md-12">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Este template é feito com <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+                <div class="col-lg-4 col-md-12 footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================Rodapé =================-->
+    
+    <!-- JavaScript do Bootstrap -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
     <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>
