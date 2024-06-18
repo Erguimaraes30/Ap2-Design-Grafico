@@ -1,101 +1,256 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <!-- Required meta tags -->
+    <!-- Meta tags obrigatórios -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="image/favicon.png" type="image/png">
-    <title>Royal Hotel</title>
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="image/optimizedimages/logo.png" type="image/png">
+    <title>CineReview</title>
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="vendors/linericon/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-    <!-- main css -->
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <style>
+        .single_review_item {
+            display: flex;
+            flex-direction: column;
+            height: 100%; 
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .img-fluid {
+            height: 400px; 
+            object-fit: cover; 
+        }
+
+        .review_content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review_content h4 {
+            margin-top: 0;
+        }
+
+        .review_content p {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+
+        .review_content img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px;
+        }
+
+        .btn.theme_btn.button_hover {
+            align-self: center; 
+            margin-top: auto; 
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .latest_reviews_area .single_review_item .review_content img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px;
+        }
+
+        .cine {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 28px; 
+            font-weight: bold; 
+            color: #333; 
+            letter-spacing: 1.5px; 
+            text-transform: uppercase; 
+            margin-left: 10px; 
+            display: inline-block; 
+            vertical-align: middle; 
+        }
+
+        .logocine {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .breadcrumb_are {
+            background-image: url('./image/optimizedimages/curtain-1275200_1280.png');
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
-    <!--================Header Area =================-->
+    <!--================Área de Cabeçalho =================-->
     <header class="header_area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo.png" alt=""></a>
+                <div class="logocine">
+                    <img src="./image/optimizedimages/logo.png" class="logo">
+                    <p class="cine">CineReview</p>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                   
-                        <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a></li>
+                        <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="filmes.html">Filmes</a></li>
                         <li class="nav-item"><a class="nav-link" href="series.html">Séries</a></li>
                         <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
                     </ul>
-                </div> 
+                </div>
             </nav>
         </div>
     </header>
-    <!--================Header Area =================-->
-    
-    <!--================Breadcrumb Area =================-->
-    <section class="breadcrumb_area">
-        <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+    <!--================Área de Cabeçalho =================-->
+
+    <!--================Área de Breadcrumb =================-->
+    <section class="breadcrumb_are">
         <div class="container">
+          
             <div class="page-cover text-center">
-                <h2 class="page-cover-tittle">Gallery</h2>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">Gallery</li>
-                </ol>
-            </div>
+        
         </div>
+        
     </section>
-    <!--================Breadcrumb Area =================-->
     
-    <!--================Breadcrumb Area =================-->
-    <section class="gallery_area section_gap">
+    <!--================Área de Breadcrumb =================-->
+    
+    <!--================Área de Críticas de Filmes =================-->
+    <section class="latest_reviews_area section_gap">
         <div class="container">
             <div class="section_title text-center">
-                <h2 class="title_color">Royal Hotel Gallery</h2>
-                <p>Who are in extremely love with eco friendly system.</p>
+                <h2 class="title_color">Sobre Nós</h2>
+                <p>Veja nossas histórias e de onde vem nossa paixao pelo cinema.</p>
             </div>
-            <div class="row imageGallery1" id="gallery">
-                <!-- Your gallery items here -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/Barbie.jpg.jpeg" alt="Barbie">
+                            <h4><a href="#">João Pedro Pingarilho</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                            <p>"Joao Pingarilho", é um homem cujo sonho era ser um roteirista de filme, com sua criatividade e destreza ele sabia que chegaria longe.</p>
+                            <a href="./Html2/Joao.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/django.jpg" alt="Django Livre">
+                            <h4><a href="#">Eduardo Ferreira</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>"Eduardo Ferreira", um homem exigente quando o assunto é filme, criou um livro dos melhores filmes que já assistiu.</p>
+                            <a href="./Html2/Eduardo.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/interestelar.jpg" alt="Interestelar">
+                            <h4><a href="#">Lucas Goulart</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>"Lucas Goulart", tem um gosto bem eclético, gosta de tudo um pouco, é conhecido como o "Diferentão".</p>
+                            <a href="./Html2/lucas.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <img class="img-fluid" src="./image/optimizedimages/bastardosinglorios.jpg" alt="Bastardos Inglórios">
+                            <h4><a href="#">Enzo Rodrigues</a></h4>
+                            <div class="star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p>
+                                "Enzo Rodrigues", apreciador de tramas com bastante sangue, e tem uma paixao por um bom terror.</p>
+                            <a href="./Html2/Enso.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                        </div>
+                    </div>
+                </div>
+                
+    <!--================Área de Críticas de Filmes =================-->
+
+    <!-- Footer -->
+    <footer class="footer_area">
+        <div class="container">
+            <div class="row footer_bottom justify-content-center">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="footer-text text-center mb-4">
+                        <!-- Link para a Política de Privacidade -->
+                        <a href="privacy-policy.html">Política de Privacidade</a>
+                    </div>
+                 
+                    <!-- Informações de Contato -->
+                    <div class="contact-info text-center mt-3">
+                        <p><i class="fa fa-envelope"></i> CineReview@gmail.com</p>
+                        <p><i class="fa fa-phone"></i> +55 (21) 97598-6229</p>
+                    </div>
+                    <!-- Direitos Autorais -->
+                    <div class="copyright text-center mt-4">
+                        <p>&copy; 2024 Reviews de Filmes e Séries. Todos os direitos reservados.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!--================Breadcrumb Area =================-->
-    
-    <!--================ start footer Area  =================-->    
-    <footer class="footer-area section_gap">
-        <!-- Your footer content here -->
     </footer>
-    <!--================ End footer Area  =================-->
-    
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- End Footer -->
+    <!-- JavaScript Bootstrap -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope-min.js"></script>
     <script src="js/stellar.js"></script>
     <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>
