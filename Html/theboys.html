@@ -13,7 +13,26 @@
             margin: 0;
             padding: 0;
             background-color: #f2f2f2; /* Cor de fundo mais clara */
-            color: #333; /* Cor do texto principal */
+            color: #b8b8b8; /* Cor do texto principal */
+           
+           
+        }
+        .img {
+            height: 300px;
+            width: auto;
+        }
+        .conteudo {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 24%, rgba(0,0,0,0.7814775568430498) 47%, rgba(0,0,0,0.40612741678702735) 100%), url('../image/optimizedimages/theboysfundo.jpg');
+            background-size: cover;
+            height: 250vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;            
+            background-position: center;
+            padding-top: 200px;
+            flex-direction: column;
+            gap: 60px;
         }
 
         header {
@@ -39,12 +58,13 @@
         }
 
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 800px;          
             padding: 20px;
-            background-color: #ffffff; /* Fundo branco para o conteúdo principal */
+            background-color: #0f0404b9; /* Fundo branco para o conteúdo principal */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding-inline: 100px;
+            border-radius: 25px;           
         }
 
         .review {
@@ -52,10 +72,12 @@
         }
 
         .review h2 {
-            color: #1a237e; /* Azul para os cabeçalhos das revisões */
-            border-bottom: 2px solid #1a237e; /* Linha azul na parte inferior */
+            color: white; /* Azul para os cabeçalhos das revisões */
+            border-bottom: 2px solid rgb(138, 138, 138); /* Linha azul na parte inferior */
             padding-bottom: 10px;
             margin-bottom: 15px;
+            font-size: 2rem;
+            font-weight: 300;
         }
 
         .review p {
@@ -67,7 +89,7 @@
             display: inline-block;
             text-align: center;
             margin-top: 20px;
-            color: #1a237e; /* Cor do texto do link */
+            color: white; /* Cor do texto do link */
             text-decoration: none;
             transition: color 0.3s; /* Transição suave da cor do texto */
         }
@@ -80,8 +102,8 @@
             display: inline-block;
             padding: 10px 20px;
             margin-top: 20px;
-            background-color: #1a237e; /* Cor de fundo do botão */
-            color: #ffffff; /* Cor do texto no botão */
+            background-color: white; /* Cor de fundo do botão */
+            color: #000000; /* Cor do texto no botão */
             text-decoration: none;
             border: none;
             border-radius: 5px;
@@ -90,15 +112,18 @@
         }
 
         .back-button:hover {
-            background-color: #0d47a1; /* Cor de fundo ao passar o mouse */
+            background-color: #0e0038; /* Cor de fundo ao passar o mouse */
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <h1>Review: The Boys</h1>
         <img src="../image/optimizedimages/melhorreviewtheboys.jpg" alt="The Boys" class="img-fluid">
-    </header>
+    </header> -->
+    <div class="conteudo">
+        <img class="img" src="../image/optimizedimages/2.png">
     <main>
         <section class="review">
             <h2>Sinopse</h2>
@@ -114,5 +139,6 @@
         </section>
         <a class="back-button" href="../index.html">&larr; Voltar para a página inicial</a>
     </main>
+        </div>
 </body>
 </html>
