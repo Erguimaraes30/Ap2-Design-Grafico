@@ -115,6 +115,26 @@
             background-color: #0e0038; 
             color: white;
         }
+        .streaming-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: white; 
+            color: #000000; 
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .streaming-button:hover {
+            background-color: #0e0038; 
+            color: white;
+        }
+        .buttons-style{
+            display: flex;
+            gap: 300px;
+        }
     </style>
 </head>
 <body>
@@ -137,7 +157,11 @@
             <h2>Conclusão</h2>
             <p>Breaking Bad é uma série que desafia as convenções tradicionais, oferecendo uma exploração profunda da natureza humana e das complexidades do crime organizado, tudo isso embalado em um storytelling arrebatador e uma cinematografia impecável.</p>
         </section>
-        <a class="back-button" href="../index.html">&larr; Voltar para a página inicial</a>
+        <div class="buttons-style">
+            <a class="back-button" href="../index.html">&larr; Voltar para a página inicial</a>
+            <a class="streaming-button" target="_blank" href="https://www.netflix.com/br/title/70143836">Assista aqui &larr;</a>
+        </div>
+
     </main>
         </div>
 </body>
