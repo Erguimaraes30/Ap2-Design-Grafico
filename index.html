@@ -124,7 +124,7 @@
                     <h6>Explorando o mundo do entretenimento</h6>
                     <h2>Reviews de Filmes e Séries</h2>
                     <p>Descubra críticas honestas, recomendações e muito mais sobre seus filmes e séries favoritos.</p>
-                    <a href="#" class="btn theme_btn button_hover">Explore Agora</a>
+                    <a href="#" id="exploreBtn" class="btn theme_btn button_hover">Explore Agora</a>
                 </div>
             </div>
         </div>
@@ -240,7 +240,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single_review_item">
                         <div class="review_content">
-                            <img class="img-fluid" src="./image/optimizedimages/melhorreviewtheboys.jpg" alt="series3">
+                            <img class="img-fluid" src="./image/optimizedimages//melhorreviewtheboys.jpg" alt="series3">
                             <h4><a href="#">The Boys</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -284,7 +284,6 @@
     </footer>
     <!-- End Footer -->
 
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
@@ -295,5 +294,11 @@
     <script src="js/jquery.stellar.min.js"></script>
     <!-- Theme JS -->
     <script src="js/theme.js"></script>
+    <script>
+        document.getElementById('exploreBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do link
+            document.querySelector('.latest_reviews_area').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
