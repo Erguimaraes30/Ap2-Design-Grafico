@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="../css/movies.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review: Oppenheimer</title>
-    <link rel="stylesheet" href="../css/movies.css">
     <style>
-        /* Seu estilo CSS existente aqui */
+        
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2; /* Cor de fundo mais clara */
-            color: #333; /* Cor do texto principal */
+            background-color: #f2f2f2; 
+            color: #b8b8b8; 
+           
+           
+        }
+        .img {
+            height: 300px;
+            width: auto;
+        }
+        .conteudo {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 24%, rgba(0,0,0,0.7814775568430498) 47%, rgba(0,0,0,0.40612741678702735) 100%), url('../image/optimizedimages/oppenheimer-1440x2560-cillian-murphy-4k-24896.jpg');
+            background-size: cover;
+            height: 250vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;            
+            background-position: center;
+            padding-top: 200px;
+            flex-direction: column;
+            gap: 60px;
         }
 
         header {
-            background-color: #0e0038; /* Roxo mais escuro */
-            color: #ffffff; /* Cor do texto no cabeçalho */
+            background-color: #0e0038; 
+            color: #ffffff; 
             padding: 20px 0;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em; /* Tamanho maior para o título */
+            font-size: 2.5em; 
         }
 
         header img {
@@ -34,17 +53,18 @@
             margin-top: 10px;
             display: block;
             margin: 0 auto;
-            border-radius: 8px; /* Borda arredondada na imagem */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
 
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 800px;          
             padding: 20px;
-            background-color: #ffffff; /* Fundo branco para o conteúdo principal */
+            background-color: #1a1106b9; 
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding-inline: 100px;
+            border-radius: 25px;           
         }
 
         .review {
@@ -52,10 +72,12 @@
         }
 
         .review h2 {
-            color: #1a237e; /* Azul para os cabeçalhos das revisões */
-            border-bottom: 2px solid #1a237e; /* Linha azul na parte inferior */
+            color: white; 
+            border-bottom: 2px solid rgb(138, 138, 138); 
             padding-bottom: 10px;
             margin-bottom: 15px;
+            font-size: 2rem;
+            font-weight: 300;
         }
 
         .review p {
@@ -67,21 +89,21 @@
             display: inline-block;
             text-align: center;
             margin-top: 20px;
-            color: #1a237e; /* Cor do texto do link */
+            color: white; 
             text-decoration: none;
-            transition: color 0.3s; /* Transição suave da cor do texto */
+            transition: color 0.3s; 
         }
 
         .back-link:hover {
-            color: #0d47a1; /* Cor do texto do link ao passar o mouse */
+            color: #0d47a1; 
         }
 
         .back-button {
             display: inline-block;
             padding: 10px 20px;
             margin-top: 20px;
-            background-color: #1a237e; /* Cor de fundo do botão */
-            color: #ffffff; /* Cor do texto no botão */
+            background-color: white; 
+            color: #000000; 
             text-decoration: none;
             border: none;
             border-radius: 5px;
@@ -90,15 +112,18 @@
         }
 
         .back-button:hover {
-            background-color: #0d47a1; /* Cor de fundo ao passar o mouse */
+            background-color: #0e0038; 
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Review: Oppenheimer</h1>
-        <img class="img-fluid" src="../image/optimizedimages/melhorreviewoppenheimer.jpg" alt="Oppenheimer">
-    </header>
+    <!-- <header>
+        <h1>Review: The Boys</h1>
+        <img src="../image/optimizedimages/melhorreviewtheboys.jpg" alt="The Boys" class="img-fluid">
+    </header> -->
+    <div class="conteudo">
+        <img class="img" src="../image/optimizedimages/Oppenheimer_Movie_Logo_2023.png">
     <main>
         <section class="review">
             <h2>Sinopse</h2>
@@ -114,5 +139,6 @@
         </section>
         <a class="back-button" href="../index.html">&larr; Voltar para a página inicial</a>
     </main>
+        </div>
 </body>
 </html>
