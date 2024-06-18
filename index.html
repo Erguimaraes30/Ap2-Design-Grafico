@@ -28,15 +28,12 @@
         .img-fluid {
             height: 400px; 
             object-fit: cover; 
-            
-
-  }
+        }
     
         .review_content {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-            
         }
     
         .review_content h4 {
@@ -54,7 +51,7 @@
             object-fit: cover;
             border-radius: 5px;
             max-height: 500px;
-}
+        }
     
         .btn.theme_btn.button_hover {
             align-self: center; 
@@ -63,7 +60,6 @@
             text-transform: uppercase;
             font-size: 14px;
         }
-    
 
         .latest_reviews_area .single_review_item .review_content img {
             width: 100%;
@@ -71,10 +67,8 @@
             object-fit: cover;
             border-radius: 5px;
             max-height: 500px; /* ajuste conforme necessário */
-}
-
+        }
     </style>
-    
 </head>
 <body>
     
@@ -109,7 +103,7 @@
                     <h6>Explorando o mundo do entretenimento</h6>
                     <h2>Reviews de Filmes e Séries</h2>
                     <p>Descubra críticas honestas, recomendações e muito mais sobre seus filmes e séries favoritos.</p>
-                    <a href="./filmes.html" class="btn theme_btn button_hover">Explore Agora</a>
+                    <a href="#latest_movie_reviews" id="exploreBtn" class="btn theme_btn button_hover">Explore Agora</a>
                 </div>
             </div>
         </div>
@@ -117,7 +111,7 @@
     <!-- End Banner Area -->
 
     <!-- Movie Reviews Section -->
-    <section class="latest_reviews_area section_gap">
+    <section id="latest_movie_reviews" class="latest_reviews_area section_gap">
         <div class="container">
             <div class="section_title text-center">
                 <h2 class="title_color">Últimas Críticas de Filmes</h2>
@@ -185,13 +179,13 @@
         <div class="container">
             <div class="section_title text-center">
                 <h2 class="title_color">Últimas Críticas de Séries</h2>
-                <p>Explore as críticas mais recentes das séries mais populares.</p>
+                <p>Veja o que nossos críticos estão dizendo sobre as séries mais populares.</p>
             </div>
             <div class="row mb_30">
                 <div class="col-lg-4 col-md-6">
                     <div class="single_review_item">
                         <div class="review_content">
-                            <img class="img-fluid" src="./image/optimizedimages/melhorreviewbrakingbad.jpg" alt="series1">
+                            <img class="img-fluid" src="image/optimizedimages/melhorreviewbrakingbad.jpg" alt="series1">
                             <h4><a href="#">Breaking Bad</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -269,7 +263,6 @@
     </footer>
     <!-- End Footer -->
 
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
@@ -280,5 +273,12 @@
     <script src="js/jquery.stellar.min.js"></script>
     <!-- Theme JS -->
     <script src="js/theme.js"></script>
+    
+    <script>
+        document.getElementById('exploreBtn').addEventListener('click', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do link
+            document.querySelector('#latest_movie_reviews').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
