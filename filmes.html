@@ -4,7 +4,7 @@
         <!-- Meta tags obrigatórios -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="image/favicon.png" type="image/png">
+        <link rel="icon" href="image/optimizedimages/logo.png" type="image/png">
         <title>CineReview</title>
         <!-- CSS Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -18,62 +18,76 @@
         <link rel="stylesheet" href="css/responsive.css">
         <!-- Custom CSS -->
         <style>
-              .single_review_item {
-            display: flex;
-            flex-direction: column;
-            height: 100%; 
-            border: 1px solid #f0f0f0;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .img-fluid {
-            height: 400px; 
-            object-fit: cover; 
-            
-
-  }
+            .single_review_item {
+                display: flex;
+                flex-direction: column;
+                height: 100%; 
+                border: 1px solid #f0f0f0;
+                border-radius: 5px;
+                overflow: hidden;
+            }
     
-        .review_content {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            
-        }
+            .img-fluid {
+                height: 400px; 
+                object-fit: cover; 
+            }
+        
+            .review_content {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .review_content h4 {
+                margin-top: 0;
+            }
+        
+            .review_content p {
+                flex-grow: 1;
+                margin-bottom: 15px;
+            }
+        
+            .review_content img {
+                width: 100%;
+                height: auto; 
+                object-fit: cover;
+                border-radius: 5px;
+                max-height: 500px;
+            }
+        
+            .btn.theme_btn.button_hover {
+                align-self: center; 
+                margin-top: auto; 
+                padding: 10px 20px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+        
+            .latest_reviews_area .single_review_item .review_content img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 5px;
+                max-height: 500px;
+            }
     
-        .review_content h4 {
-            margin-top: 0;
-        }
-    
-        .review_content p {
-            flex-grow: 1;
-            margin-bottom: 15px;
-        }
-    
-        .review_content img {
-            width: 100%;
-            height: auto; 
-            object-fit: cover;
-            border-radius: 5px;
-            max-height: 500px;
-}
-    
-        .btn.theme_btn.button_hover {
-            align-self: center; 
-            margin-top: auto; 
-            padding: 10px 20px;
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-    
-
-        .latest_reviews_area .single_review_item .review_content img {
-            width: 100%;
-            height: auto; /* ou uma altura fixa como 400px */
-            object-fit: cover;
-            border-radius: 5px;
-            max-height: 500px; /* ajuste conforme necessário */
-}
+            .cine {
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 28px; 
+                font-weight: bold; 
+                color: #333; 
+                letter-spacing: 1.5px; 
+                text-transform: uppercase; 
+                margin-left: 10px; 
+                display: inline-block; 
+                vertical-align: middle; 
+            }
+            .logocine{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
         </style>
     </head>
     <body>
@@ -81,8 +95,10 @@
         <header class="header_area">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <img src="./image/optimizedimages/logo.png" class="logo">
-                    <p class="cine">CineReview</p>
+                    <div class="logocine">
+                        <img src="./image/optimizedimages/logo.png" class="logo">
+                        <p class="cine">CineReview</p>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
