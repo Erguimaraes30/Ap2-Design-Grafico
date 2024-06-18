@@ -5,69 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review: Oppenheimer</title>
     <link rel="stylesheet" href="../css/movies.css">
+    <style>
+        /* Seu estilo CSS existente aqui */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Cor de fundo mais clara */
+            color: #333; /* Cor do texto principal */
+        }
+
+        header {
+            background-color: #0e0038; /* Roxo mais escuro */
+            color: #ffffff; /* Cor do texto no cabeçalho */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em; /* Tamanho maior para o título */
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px; /* Borda arredondada na imagem */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fundo branco para o conteúdo principal */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .review {
+            margin-bottom: 30px;
+        }
+
+        .review h2 {
+            color: #1a237e; /* Azul para os cabeçalhos das revisões */
+            border-bottom: 2px solid #1a237e; /* Linha azul na parte inferior */
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .review p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .back-link {
+            display: inline-block;
+            text-align: center;
+            margin-top: 20px;
+            color: #1a237e; /* Cor do texto do link */
+            text-decoration: none;
+            transition: color 0.3s; /* Transição suave da cor do texto */
+        }
+
+        .back-link:hover {
+            color: #0d47a1; /* Cor do texto do link ao passar o mouse */
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #1a237e; /* Cor de fundo do botão */
+            color: #ffffff; /* Cor do texto no botão */
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0d47a1; /* Cor de fundo ao passar o mouse */
+        }
+    </style>
 </head>
 <body>
-    <style>
-        /* Estilos gerais */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #1b094c; /* roxo escuro */
-    color: #ffffff; /* branco */
-}
-
-header {
-    background-color: #0e0038; /* roxo mais escuro */
-    color: #ffffff; /* branco */
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    display: block;
-    margin: 0 auto;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.review {
-    margin-bottom: 30px;
-}
-
-.review h2 {
-    color: #1a237e; /* azul escuro */
-}
-
-.review p {
-    text-align: justify;
-}
-
-.back-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #ffffff; /* azul escuro */
-    text-decoration: none;
-}
-
-.back-link:hover {
-    text-decoration: underline;
-}
-
-    </style>
     <header>
         <h1>Review: Oppenheimer</h1>
         <img class="img-fluid" src="../image/optimizedimages/melhorreviewoppenheimer.jpg" alt="Oppenheimer">
@@ -85,7 +112,7 @@ main {
             <h2>Conclusão</h2>
             <p>Oppenheimer oferece uma visão profunda e provocativa sobre a vida e o legado de um dos cientistas mais controversos e influentes do século XX, destacando seu impacto no curso da história mundial.</p>
         </section>
+        <a class="back-button" href="../index.html">&larr; Voltar para a página inicial</a>
     </main>
-    <a class="back-link" href="../index.html">&larr; Voltar para a página inicial</a>
 </body>
 </html>

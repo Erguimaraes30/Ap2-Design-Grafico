@@ -146,11 +146,12 @@ button:focus {
 
   
 
-.cine {
-  color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-}
+  .cine {
+    color: #0e0038;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+     
+  }
 
 .section_title p {
   font-size: 14px;
