@@ -16,28 +16,84 @@
         <!-- CSS principal -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <!-- Custom CSS -->
+        <style>
+              .single_review_item {
+            display: flex;
+            flex-direction: column;
+            height: 100%; 
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .img-fluid {
+            height: 400px; 
+            object-fit: cover; 
+            
+
+  }
+    
+        .review_content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        .review_content h4 {
+            margin-top: 0;
+        }
+    
+        .review_content p {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+    
+        .review_content img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px;
+}
+    
+        .btn.theme_btn.button_hover {
+            align-self: center; 
+            margin-top: auto; 
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    
+
+        .latest_reviews_area .single_review_item .review_content img {
+            width: 100%;
+            height: auto; /* ou uma altura fixa como 400px */
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px; /* ajuste conforme necessário */
+}
+        </style>
     </head>
     <body>
         <!--================Área de Cabeçalho =================-->
         <header class="header_area">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <!-- Marca e botão de navegação -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo.png" alt=""></a>
+                    <img src="./image/optimizedimages/logo.png" class="logo">
+                    <p class="cine">CineReview</p>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <!-- Coleta os links de navegação, formulários e outros conteúdos para alternar -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a></li>
+                            <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="filmes.html">Filmes</a></li>
                             <li class="nav-item"><a class="nav-link" href="series.html">Séries</a></li>
                             <li class="nav-item"><a class="nav-link" href="trailers.html">Trailers</a></li>
                         </ul>
-                    </div> 
+                    </div>
                 </nav>
             </div>
         </header>
