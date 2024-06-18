@@ -14,13 +14,75 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .single_review_item {
+            display: flex;
+            flex-direction: column;
+            height: 100%; 
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .img-fluid {
+            height: 400px; 
+            object-fit: cover; 
+            
+
+  }
+    
+        .review_content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        .review_content h4 {
+            margin-top: 0;
+        }
+    
+        .review_content p {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+    
+        .review_content img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px;
+}
+    
+        .btn.theme_btn.button_hover {
+            align-self: center; 
+            margin-top: auto; 
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    
+
+        .latest_reviews_area .single_review_item .review_content img {
+            width: 100%;
+            height: auto; /* ou uma altura fixa como 400px */
+            object-fit: cover;
+            border-radius: 5px;
+            max-height: 500px; /* ajuste conforme necessário */
+}
+
+    </style>
+    
 </head>
 <body>
+    
     <!-- Header Area -->
     <header class="header_area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <img src="image/Home/73960.png" class="logo"> </img>
+                <img src="./image/Home/logo.png" class="logo">
                 <p class="cine">CineReview</p>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -62,10 +124,10 @@
                 <p>Descubra o que nossos críticos têm a dizer sobre os filmes mais recentes.</p>
             </div>
             <div class="row mb_30">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_review_item">
-                        <img class="img-fluid" src="image/Home/unnamed.jpg" alt="movie1">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
                         <div class="review_content">
+                            <img class="img-fluid" src="./image/Home/olobo.jpg" alt="movie1">
                             <h4><a href="#">O Lobo de Wallstreet</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -75,14 +137,14 @@
                                 <i class="fa fa-star"></i>
                             </div>
                             <p>"O Lobo de Wall Street" segue Jordan Belfort, interpretado por Leonardo DiCaprio, um corretor de valores que alcança sucesso e riqueza através de práticas fraudulentas nos anos 90, explorando os excessos e as consequências do mundo financeiro de Wall Street.</p>
-                            <a href="#" class="btn theme_btn button_hover">Ver Crítica</a>
+                            <a href="./Html/olobo.html" class="btn theme_btn button_hover">Ver Crítica</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_review_item">
-                        <img class="img-fluid" src="image/Home/1_gTCeYbXOleEDlh8fW_ksqw.png" alt="movie2">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
                         <div class="review_content">
+                            <img class="img-fluid" src="image/Home/whiplash.png" alt="movie2">
                             <h4><a href="#">Whiplash</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -91,15 +153,15 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
                             </div>
-                            <p>""Whiplash" é um drama que segue Andrew Neiman, um talentoso baterista, e Terence Fletcher, um instrutor de música exigente. Andrew busca a perfeição sob a tutela severa de Fletcher no conservatório de música.</p>
-                            <a href="#" class="btn theme_btn button_hover">Ver Crítica</a>
+                            <p>"Whiplash" é um drama que segue Andrew Neiman, um talentoso baterista, e Terence Fletcher, um instrutor de música exigente. Andrew busca a perfeição sob a tutela severa de Fletcher no conservatório de música.</p>
+                            <a href="./Html/whiplash.html" class="btn theme_btn button_hover">Ver Crítica</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_review_item">
-                        <img class="img-fluid" src="image/Home/15065_medio.jpg" alt="movie3">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="single_review_item text-center">
                         <div class="review_content">
+                            <img class="img-fluid" src="image/Home/oppenheimer.jpg" alt="movie3">
                             <h4><a href="#">Oppenheimer</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -108,8 +170,8 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <p>Oppenheimer" é um filme baseado na vida de J. Robert Oppenheimer, físico-chefe do Projeto Manhattan. O enredo foca no desenvolvimento das primeiras bombas atômicas e as consequências históricas, com um elenco estelar incluindo Emily Blunt, Matt Damon, Robert Downey Jr.</p>
-                            <a href="#" class="btn theme_btn button_hover">Ver Crítica</a>
+                            <p>"Oppenheimer" é um filme baseado na vida de J. Robert Oppenheimer, físico-chefe do Projeto Manhattan. O enredo foca no desenvolvimento das primeiras bombas atômicas e as consequências históricas, com um elenco estelar incluindo Emily Blunt, Matt Damon, Robert Downey Jr.</p>
+                            <a href="./Html/oppenheimer.html" class="btn theme_btn button_hover">Ver Crítica</a>
                         </div>
                     </div>
                 </div>
@@ -128,8 +190,8 @@
             <div class="row mb_30">
                 <div class="col-lg-4 col-md-6">
                     <div class="single_review_item">
-                        <img class="img-fluid" src="image/series1.jpg" alt="series1">
                         <div class="review_content">
+                            <img class="img-fluid" src="./image/Home/temporada-5.jpeg" alt="series1">
                             <h4><a href="#">Breaking Bad</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -145,8 +207,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single_review_item">
-                        <img class="img-fluid" src="image/series2.jpg" alt="series2">
                         <div class="review_content">
+                            <img class="img-fluid" src="image/Home/Dark.jpg" alt="series2">
                             <h4><a href="#">Dark</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -162,8 +224,8 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single_review_item">
-                        <img class="img-fluid" src="image/series3.jpg" alt="series3">
                         <div class="review_content">
+                            <img class="img-fluid" src="image/Home/theboys.jpg" alt="series3">
                             <h4><a href="#">The Boys</a></h4>
                             <div class="star">
                                 <i class="fa fa-star"></i>
@@ -183,29 +245,29 @@
     <!-- End TV Series Reviews Section -->
 
     <!-- Footer -->
-<footer class="footer_area">
-    <div class="container">
-        <div class="row footer_bottom justify-content-center">
-            <div class="col-lg-8 col-sm-12">
-                <div class="footer-text text-center mb-4">
-                    <!-- Link para a Política de Privacidade -->
-                    <a href="privacy-policy.html">Política de Privacidade</a>
-                </div>
-             
-                <!-- Informações de Contato -->
-                <div class="contact-info text-center mt-3">
-                    <p><i class="fa fa-envelope"></i> CineReview@gmail.com</p>
-                    <p><i class="fa fa-phone"></i> +55 (21) 97598-6229</p>
-                </div>
-                <!-- Direitos Autorais -->
-                <div class="copyright text-center mt-4">
-                    <p>&copy; 2024 Reviews de Filmes e Séries. Todos os direitos reservados.</p>
+    <footer class="footer_area">
+        <div class="container">
+            <div class="row footer_bottom justify-content-center">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="footer-text text-center mb-4">
+                        <!-- Link para a Política de Privacidade -->
+                        <a href="privacy-policy.html">Política de Privacidade</a>
+                    </div>
+                 
+                    <!-- Informações de Contato -->
+                    <div class="contact-info text-center mt-3">
+                        <p><i class="fa fa-envelope"></i> CineReview@gmail.com</p>
+                        <p><i class="fa fa-phone"></i> +55 (21) 97598-6229</p>
+                    </div>
+                    <!-- Direitos Autorais -->
+                    <div class="copyright text-center mt-4">
+                        <p>&copy; 2024 Reviews de Filmes e Séries. Todos os direitos reservados.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

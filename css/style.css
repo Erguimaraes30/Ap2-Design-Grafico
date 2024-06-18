@@ -144,11 +144,7 @@ button:focus {
   max-width: 50px; 
   height: auto;  }
 
-  .img-fluid {
-    height: 400px; 
-    object-fit: cover; 
-
-  }
+  
 
 .cine {
   color: black;
@@ -3614,6 +3610,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer-bottom .footer-social a:hover {
   color: #f3c300;
 }
+
+
 
 /*---------------------------------------------------- */
 
