@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="../css/movies.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review: Harry Potter e o Prisioneiro de Azkaban</title>
+    <title>Review: Harry Potter</title>
     <style>
-        /* Estilos gerais */
+        
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #1b094c; /* roxo escuro */
-            color: #ffffff; /* branco */
+            padding: 0;
+            background-color: #f2f2f2; 
+            color: #b8b8b8; 
+           
+           
+        }
+        .img {
+            height: 300px;
+            width: auto;
+        }
+        .conteudo {
+            background: linear-gradient(0deg, rgba(0,0,0,1) 24%, rgba(0,0,0,0.7814775568430498) 47%, rgba(0,0,0,0.40612741678702735) 100%), url('../image/optimizedimages/harryfundo.jpg');
+            background-size: cover;
+            height: 250vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;            
+            background-position: center;
+            padding-top: 200px;
+            flex-direction: column;
+            gap: 60px;
         }
 
         header {
+            background-color: #0e0038; 
+            color: #ffffff; 
+            padding: 20px 0;
             text-align: center;
-            margin-bottom: 20px;
         }
 
         header h1 {
-            color: #1a237e; /* azul escuro */
+            margin: 0;
+            font-size: 2.5em; 
         }
 
         header img {
@@ -30,43 +53,95 @@
             margin-top: 10px;
             display: block;
             margin: 0 auto;
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
 
         main {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 800px;          
+            padding: 20px;
+            background-color: #040430b9; 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding-inline: 100px;
+            border-radius: 25px;           
         }
 
         .review {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .review h2 {
-            color: #1a237e; /* azul escuro */
+            color: white; 
+            border-bottom: 2px solid rgb(138, 138, 138); 
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            font-weight: 300;
         }
 
         .review p {
             text-align: justify;
+            line-height: 1.8;
         }
 
         .back-link {
-            display: block;
+            display: inline-block;
             text-align: center;
             margin-top: 20px;
-            color: #ffffff; /* branco */
+            color: white; 
             text-decoration: none;
+            transition: color 0.3s; 
         }
 
         .back-link:hover {
-            text-decoration: underline;
+            color: #0d47a1; 
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: white; 
+            color: #000000; 
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0e0038; 
+            color: white;
+        }
+        .streaming-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: white; 
+            color: #000000; 
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    
+        .streaming-button:hover {
+            background-color: #0e0038; 
+            color: white;
+        }
+        .buttons-style{
+            display: flex;
+            gap: 300px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Review: Harry Potter e o Prisioneiro de Azkaban</h1>
-        <img src="../image/Home/harry-potter-prisioneiro-azkaban.jpg" alt="Harry Potter e o Prisioneiro de Azkaban">
-    </header>
+    
+    <div class="conteudo">
+        <img class="img" src="../image/optimizedimages/harrypotterlogo.png">
     <main>
         <section class="review">
             <h2>Sinopse</h2>
@@ -74,13 +149,17 @@
         </section>
         <section class="review">
             <h2>Crítica</h2>
-            <p>"Harry Potter e o Prisioneiro de Azkaban" é uma adaptação brilhante que captura a essência mágica e sombria do livro de J.K. Rowling. Alfonso Cuarón traz um toque visual único e uma sensibilidade emocional que eleva o filme além das expectativas. As performances dos jovens atores são convincentes, enquanto a introdução de novos personagens e o aprofundamento da mitologia ampliam o universo de Harry Potter de maneira fascinante. Com uma trilha sonora envolvente e efeitos visuais impressionantes, o filme mantém os espectadores envolvidos do início ao fim.</p>
+            <p>Harry Potter e o Prisioneiro de Azkaban" é uma adaptação brilhante que captura a essência mágica e sombria do livro de J.K. Rowling. Alfonso Cuarón traz um toque visual único e uma sensibilidade emocional que eleva o filme além das expectativas. As performances dos jovens atores são convincentes, enquanto a introdução de novos personagens e o aprofundamento da mitologia ampliam o universo de Harry Potter de maneira fascinante. Com uma trilha sonora envolvente e efeitos visuais impressionantes, o filme mantém os espectadores envolvidos do início ao fim.</p>
         </section>
         <section class="review">
             <h2>Conclusão</h2>
-            <p>Harry Potter e o Prisioneiro de Azkaban é um marco na saga do jovem bruxo, combinando aventura, mistério e emoção em uma experiência cinematográfica que agrada fãs e críticos, garantindo seu lugar como um dos melhores filmes da série.</p>
+            <p>Harry Potter e o Prisioneiro de Azkaban é um marco na saga do jovem bruxo, combinando aventura, mistério e emoção em uma experiência cinematográfica que agrada fãs e críticos, garantindo seu lugar como um dos melhores filmes da série</p>
         </section>
+        <div class="buttons-style">
+            <a class="back-button" href="../filmes.html">&larr; Voltar</a>
+            <a class="streaming-button" target="_blank" href="https://play.max.com/movie/73553a76-1658-45f6-9e26-1b9c4443b0d6/">Assista aqui &larr;</a>
+        </div>
     </main>
-    <a class="back-link" href="../index.html">&larr; Voltar para a página inicial</a>
+        </div>
 </body>
 </html>
