@@ -4,7 +4,7 @@
     <!-- Meta tags obrigatórios -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="image/optimizedimages/logo.png" type="image/png">
+    <link rel="icon" href="image/optimizedimages/imagens-otimizadas/otimizadologo.png" type="image/png">
     <title>CineReview</title>
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -27,32 +27,21 @@
             overflow: hidden;
         }
 
-        .img-fluid {
-            height: 400px; 
-            object-fit: cover; 
-        }
-
         .review_content {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
+            padding: 20px;
         }
 
         .review_content h4 {
             margin-top: 0;
         }
 
+     
         .review_content p {
             flex-grow: 1;
             margin-bottom: 15px;
-        }
-
-        .review_content img {
-            width: 100%;
-            height: auto; 
-            object-fit: cover;
-            border-radius: 5px;
-            max-height: 500px;
         }
 
         .btn.theme_btn.button_hover {
@@ -61,14 +50,6 @@
             padding: 10px 20px;
             text-transform: uppercase;
             font-size: 14px;
-        }
-
-        .latest_reviews_area .single_review_item .review_content img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 5px;
-            max-height: 500px;
         }
 
         .cine {
@@ -90,10 +71,28 @@
             gap: 10px;
         }
 
-        .breadcrumb_are {
+        .breadcrumb_area {
             background-image: url('./image/optimizedimages/curtain-1275200_1280.png');
             height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
+
+        .breadcrumb_area h2 {
+            font-size: 3em;
+        }
+
+        .breadcrumb_area p {
+            font-size: 1.2em;
+        }
+
+        .lucas{
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
@@ -102,7 +101,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="logocine">
-                    <img src="./image/optimizedimages/logo.png" class="logo">
+                    <img src="./image/optimizedimages/imagens-otimizadas/otimizadologo.png" class="logo" alt="CineReview Logo">
                     <p class="cine">CineReview</p>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,10 +109,10 @@
                 </button>
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item "><a class="nav-link" href="filmes.html">Filmes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="filmes.html">Filmes</a></li>
                         <li class="nav-item"><a class="nav-link" href="series.html">Séries</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="trailers.html">Sobre nós</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="trailers.html">Sobre Nós</a></li>
                     </ul>
                 </div>
             </nav>
@@ -122,96 +121,80 @@
     <!--================Área de Cabeçalho =================-->
 
     <!--================Área de Breadcrumb =================-->
-    <section class="breadcrumb_are">
+    <section class="breadcrumb_area">
         <div class="container">
-          
             <div class="page-cover text-center">
-        
+                <h2>Obrigado!</h2>
+                <p>Nossa paixão pelo cinema cresce cada vez mais que alguém usufrui do nosso trabalho.</p>
+            </div>
         </div>
-        
     </section>
-    
     <!--================Área de Breadcrumb =================-->
-    
-    <!--================Área de Críticas de Filmes =================-->
+
+    <!--================Área de Sobre Nós =================-->
     <section class="latest_reviews_area section_gap">
         <div class="container">
             <div class="section_title text-center">
                 <h2 class="title_color">Sobre Nós</h2>
-                <p>Veja nossas histórias e de onde vem nossa paixao pelo cinema.</p>
+                <p>Conheça nossa equipe e a paixão que nos une pelo cinema.</p>
             </div>
             <div class="row">
+                <!-- João Pedro Pingarilho -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="single_review_item text-center">
                         <div class="review_content">
-                            <img class="img-fluid" src="./image/optimizedimages/Barbie.jpg.jpeg" alt="Barbie">
                             <h4><a href="#">João Pedro Pingarilho</a></h4>
                             <div class="star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
+                        
                             </div>
-                            <p>"Joao Pingarilho", é um homem cujo sonho era ser um roteirista de filme, com sua criatividade e destreza ele sabia que chegaria longe.</p>
-                            <a href="./Html2/Joao.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                            <p>João Pedro é um aspirante a roteirista com uma imaginação fértil e uma determinação inabalável para alcançar o sucesso na indústria cinematográfica.</p>
+                            <a href="./Html2/Joao.html" class="btn theme_btn button_hover">Ver Biografia</a>
                         </div>
                     </div>
                 </div>
+                <!-- Eduardo Ferreira -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="single_review_item text-center">
                         <div class="review_content">
-                            <img class="img-fluid" src="./image/optimizedimages/django.jpg" alt="Django Livre">
                             <h4><a href="#">Eduardo Ferreira</a></h4>
                             <div class="star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                            >
                             </div>
-                            <p>"Eduardo Ferreira", um homem exigente quando o assunto é filme, criou um livro dos melhores filmes que já assistiu.</p>
-                            <a href="./Html2/Eduardo.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                            <p>Eduardo é um crítico exigente, conhecido por seu livro onde registra meticulosamente os melhores filmes que já assistiu.</p>
+                            <a href="./Html2/Eduardo.html" class="btn theme_btn button_hover">Ver Biografia</a>
                         </div>
                     </div>
                 </div>
+                <!-- Enzo Rodrigues -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="single_review_item text-center">
                         <div class="review_content">
-                            <img class="img-fluid" src="./image/optimizedimages/interestelar.jpg" alt="Interestelar">
-                            <h4><a href="#">Lucas Goulart</a></h4>
-                            <div class="star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <p>"Lucas Goulart", tem um gosto bem eclético, gosta de tudo um pouco, é conhecido como o "Diferentão".</p>
-                            <a href="./Html2/lucas.html" class="btn theme_btn button_hover">Ver Crítica</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="single_review_item text-center">
-                        <div class="review_content">
-                            <img class="img-fluid" src="./image/optimizedimages/bastardosinglorios.jpg" alt="Bastardos Inglórios">
                             <h4><a href="#">Enzo Rodrigues</a></h4>
                             <div class="star">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                         
                             </div>
-                            <p>
-                                "Enzo Rodrigues", apreciador de tramas com bastante sangue, e tem uma paixao por um bom terror.</p>
-                            <a href="./Html2/Enso.html" class="btn theme_btn button_hover">Ver Crítica</a>
+                            <p>Enzo é um fã de filmes de terror e tramas sangrentas, sempre em busca de adrenalina e emoções fortes no cinema.</p>
+                            <a href="./Html2/Enso.html" class="btn theme_btn button_hover">Ver Biografia</a>
                         </div>
                     </div>
                 </div>
-                
-    <!--================Área de Críticas de Filmes =================-->
+                <!-- Lucas Goulart -->
+                <div class="lucas">
+                    <div class="single_review_item text-center">
+                        <div class="review_content">
+                            <h4><a href="#">Lucas Goulart</a></h4>
+                            <div class="star">
+                                
+                            </div>
+                            <p>Lucas é o "Diferentão" da equipe, com um gosto eclético que vai de dramas intensos a comédias leves, sempre em busca de novas experiências cinematográficas.</p>
+                            <a href="./Html2/lucas.html" class="btn theme_btn button_hover">Ver Biografia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Área de Sobre Nós =================-->
 
     <!-- Footer -->
     <footer class="footer_area">
